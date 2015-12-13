@@ -9,6 +9,7 @@
 @import '_variables';
 @import 'normalize';
 @import 'reboot';
+@import 'font-awesome/font-awesome';
 
 body {
     text-rendering: optimizeLegibility;
@@ -247,7 +248,11 @@ footer {
 
 .toe {
 	float: right;
-	padding: 0.1rem 0.3rem;
+	padding: 0.1em 0.3em;
+}
+
+.toe:first-child {
+    margin-right: 1em;
 }
 
 .toe a {
