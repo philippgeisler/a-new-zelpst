@@ -1,0 +1,39 @@
+/* Fonts */
+@font-face {
+    font-family: IMFell;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/IMFell/IMFeENrm29C.otf");
+}
+@font-face {
+    font-family: IMFell;
+    font-weight: normal;
+    font-style: italic;
+    src: url("../fonts/IMFell/IMFeENit29C.otf");
+}
+@font-face {
+    font-family: IMFellFlowers;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/IMFell/IMFeFlow2.otf");
+}
+
+$font-size-root: 16px;
+$font-family-base: IMFell, serif;
+$font-size-base: 1.1rem;
+$line-height: 2rem;
+$body-color: #111;
+$body-bg: #fefeff;
+
+$abbr-border-color: #111;
+$dt-font-weight: bold;
+
+$link-color: darkred;
+$link-decoration: underline;
+$link-hover-color: $link-color;
+$link-hover-decoration: $link-decoration;
+
+$table-bg: $body-bg;
+
+$table-cell-padding: .25em;
+$text-muted: #666;

@@ -1,0 +1,277 @@
+/*
+ * OCTAVO
+ * created by Philipp Geisler
+ * originally inspired by a blog post by Clive Thompson,
+ *   http://www.collisiondetection.net/mt/archives/2014/02/_thats_one_of_t.php
+ */
+
+ /* CSS resets from Bootstrap (v4-dev) */
+@import '_variables';
+@import 'normalize';
+@import 'reboot';
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-variant-ligatures: common-ligatures; /* for iOS and Safari 6 */
+    font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
+    -webkit-font-feature-settings: "kern";
+    font-feature-settings: "kern";
+    font-kerning: normal;
+    font-variant-numeric: oldstyle-nums stacked-fractions; /* apparently not supported (by Safari) */
+}
+
+#content {
+    width: 24rem;
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-variant: small-caps;
+    line-height: 3rem;
+    text-align: center;
+    margin: 2rem .5rem;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: normal;
+    font-variant: small-caps;
+    margin: 1em 0;
+}
+
+hr {
+    clear: both;
+    width: 80%;
+    height: 3px;
+    border: none;
+    border-top: 1px solid;
+}
+
+.spaced {
+    letter-spacing: .2em;
+}
+
+.em {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: .5em;
+    margin: 2rem .5rem;
+}
+
+.xs {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    letter-spacing: .2em;
+    margin: .6rem .5rem;
+}
+
+em, i {
+    font-style: italic;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+#post-meta {
+    margin-bottom: 3rem;
+
+    div {
+        font-size: 1.5rem;
+        font-variant: small-caps;
+        letter-spacing: .2em;
+        text-align: center;
+    }
+
+    hr {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .place {
+        margin: 1.5rem 0;
+    }
+    .place::after {
+        content: ':';
+    }
+
+    .author {
+        font-size: 1rem;
+        letter-spacing: normal;
+        margin-bottom: 1rem;
+    }
+
+    .author-name {
+        font-size: 1.1rem;
+        font-variant: small-caps;
+        display: inline;
+    }
+
+    .year {
+        font-size: 1rem;
+        line-height: 1rem;
+   }
+}
+
+blockquote {
+    font-size: 1em;
+    font-style: italic;
+    line-height: 1.7em;
+    text-align: left;
+    text-indent: 2em;
+    margin: 2em 0;
+
+    p {
+        margin: 0;
+    }
+
+    cite {
+        font-variant: small-caps;
+        font-size: 1.2em;
+        float: right;
+    }
+
+    /* cite::before {
+        content: ' — '
+    } */
+}
+
+figure {
+    img {
+        width: 100%;
+    }
+
+    figcaption {
+        position: relative;
+        top: -.4rem;  // ugly fix for problem with (empty) img link text/line height
+        font-variant: small-caps;
+        font-size: .9rem;
+        line-height: 1.1em;
+        text-align: right;
+    }
+}
+
+p {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 2rem 0;
+}
+
+.textbody p::first-letter {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: darkred;
+}
+
+dt {
+    font-size: 1.2em;
+}
+
+dt::after {
+    content: ':';
+}
+
+dd {
+    font-size: 1.2em;
+    margin-left: 1rem;
+}
+
+.footnote-ref {
+    font-size: .7rem;
+}
+
+.footnotes {
+    font-size: .95rem;
+
+    p {
+        font-size: 1rem;
+    }
+
+    ol {
+        padding-left: 0;
+    }
+}
+
+nav {
+    font-size: 1.5rem;
+    width: 24rem;
+    margin: auto;
+    padding-bottom: 5rem;
+
+    a.prev {
+        float: left;
+    }
+    a.prev::before {
+        font-family: IMFellFlowers;
+        text-decoration: none;
+        display: inline-block;
+        content: '2';
+        margin-right: .5rem;
+    }
+
+    a.next {
+        float: right;
+    }
+    a.next::after {
+        font-family: IMFellFlowers;
+        text-decoration: none;
+        display: inline-block;
+        content: '1';
+        margin-left: .5rem;
+    }
+}
+
+footer {
+	clear: both;
+	height: 1.4rem;
+	width: 100%;
+    font-size: 0.9rem;
+}
+
+.feet {
+	bottom: 0 0;
+	clear: both;
+	width: 100%;
+}
+
+.toe {
+	float: right;
+	padding: 0.1rem 0.3rem;
+}
+
+.toe a {
+    background-color: transparent;
+}
+
+.toe a:visited {
+    color: black;
+}
+
+.toe a:link {
+    color: black;
+}
+
+#license {
+	display: inline;
+}
+#cc-logo {
+    display: inline;
+    padding: 0;
+}
+#cc-meta { display: none; }
+
+#impressum address p {
+    border: solid rgb( 64,  64,  96) 1px;
+    padding: .5rem .6rem;
+}
