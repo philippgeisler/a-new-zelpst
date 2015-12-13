@@ -10,15 +10,16 @@
 
     		<section class="subtitle"><?php echo $page->subtitle()->kirbytext() ?></section>
     		<?php ecco($page->subtitle(), "<hr>", "") ?>
-        </header>
-		<section id="post-meta">
-			<div class="place"><?php echo $page->city()->html() ?></div>
-			<div class="author">Printed for &nbsp;<div class="author-name"><?php echo $page->author()->html() ?></div>,&nbsp; in <em><?php echo $page->borrow()->html() ?></em></div>
-			<hr>
-			<div class="year"><?php echo $page->year_romanized()->html() ?></div>
-		</section>
 
-		<div class="textbody"><?php echo $page->text()->kirbytext() ?></div>
+    		<aside id="post-meta">
+    			<div class="place"><?php echo $page->city()->html() ?></div>
+    			<div class="author">Printed for &nbsp;<div class="author-name"><?php echo $page->author()->html() ?></div>,&nbsp; in <em><?php echo $page->borrow()->html() ?></em></div>
+    			<hr>
+    			<div class="year"><?php echo $page->year_romanized()->html() ?></div>
+    		</aside>
+        </header>
+
+		<section class="textbody"><?php echo $page->text()->kirbytext() ?></section>
 	</article>
 </section>
 <?php snippet('prevnext') ?>

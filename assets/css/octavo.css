@@ -2453,16 +2453,17 @@ h1 {
   font-variant: small-caps;
   line-height: 3rem;
   text-align: center;
-  margin: 2rem .5rem; }
+  margin: .75em .1em; }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.8rem;
   font-weight: bold;
+  font-variant: small-caps;
   margin-top: 1.5em;
-  margin-bottom: 1em; }
+  margin-bottom: .75em; }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.5rem;
   font-weight: normal;
   font-variant: small-caps;
   margin: 1em 0; }
@@ -2481,13 +2482,14 @@ hr {
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: .5em;
-  margin: 2rem .5rem; }
+  margin: .5em .1em;
+  padding-left: .25em; }
 
 .xs {
   font-size: 1.5rem;
   line-height: 1rem;
   letter-spacing: .2em;
-  margin: .6rem .5rem; }
+  margin: .75em .25em; }
 
 em, i {
   font-style: italic; }
@@ -2496,7 +2498,7 @@ strong, b {
   font-weight: bold; }
 
 #post-meta {
-  margin-bottom: 3rem; }
+  margin-bottom: 3em; }
   #post-meta div {
     font-size: 1.5rem;
     font-variant: small-caps;
@@ -2506,13 +2508,13 @@ strong, b {
     width: 30%;
     margin: 0 auto; }
   #post-meta .place {
-    margin: 1.5rem 0; }
-  #post-meta .place::after {
-    content: ':'; }
+    margin: 1em 0; }
+    #post-meta .place::after {
+      content: ':'; }
   #post-meta .author {
     font-size: 1rem;
     letter-spacing: normal;
-    margin-bottom: 1rem; }
+    margin-bottom: 1em; }
   #post-meta .author-name {
     font-size: 1.1rem;
     font-variant: small-caps;
@@ -2521,16 +2523,18 @@ strong, b {
     font-size: 1rem;
     line-height: 1rem; }
 
+p {
+  font-size: 1.25rem;
+  text-align: justify;
+  margin: 2em 0 1em 0; }
+
 blockquote {
   font-size: 1em;
   font-style: italic;
   line-height: 1.7em;
   text-align: left;
   text-indent: 2em;
-  margin: 2em 0;
-  /* cite::before {
-      content: ' — '
-  } */ }
+  margin: 2em 0; }
   blockquote p {
     margin: 0; }
   blockquote cite {
@@ -2538,22 +2542,29 @@ blockquote {
     font-size: 1.2em;
     float: right; }
 
+pre {
+  background-color: #222;
+  line-height: 1.1em;
+  padding: .75em 1.25em;
+  border-radius: 1rem;
+  margin-bottom: 2em; }
+  pre code {
+    color: #ddd;
+    font-family: monospace;
+    font-size: 1rem; }
+
 figure img {
   width: 100%; }
 figure figcaption {
   position: relative;
-  top: -.4rem;
+  font-style: italic;
   font-variant: small-caps;
-  font-size: .9rem;
+  font-size: 1rem;
   line-height: 1.1em;
-  text-align: right; }
+  text-align: right;
+  padding: .1em 0; }
 
-p {
-  font-size: 1.2em;
-  text-align: justify;
-  margin: 2rem 0; }
-
-.textbody p::first-letter {
+.textbody > p::first-letter {
   display: inline-block;
   font-size: 3rem;
   font-weight: bold;
@@ -2561,25 +2572,45 @@ p {
   text-decoration: none;
   color: darkred; }
 
-dt {
-  font-size: 1.2em; }
+.excerpt {
+  /* Read on… */ }
+  .excerpt a, .excerpt a:link, .excerpt a:visited {
+    font-size: 1.75rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    width: auto; }
+    .excerpt a::after, .excerpt a:link::after, .excerpt a:visited::after {
+      content: '…';
+      text-decoration: none;
+      display: inline-block; }
+  .excerpt p:last-child {
+    text-align: right; }
 
-dt::after {
-  content: ':'; }
+dt {
+  font-size: 1.5rem;
+  font-style: italic; }
+  dt::after {
+    content: ':'; }
 
 dd {
-  font-size: 1.2em;
-  margin-left: 1rem; }
+  font-size: 1.1rem;
+  line-height: 1.25rem;
+  text-indent: -.75em;
+  margin-top: .75em;
+  margin-left: 1em; }
+  dd::before {
+    content: '•';
+    margin-right: .5em; }
+  dd:last-child {
+    margin-bottom: 2em; }
 
-.footnote-ref {
-  font-size: .7rem; }
-
-.footnotes {
-  font-size: .95rem; }
-  .footnotes p {
-    font-size: 1rem; }
-  .footnotes ol {
-    padding-left: 0; }
+.footnotes ol {
+  font-size: 1.2rem;
+  padding-left: 0; }
+.footnotes p {
+  font-size: 1rem; }
+.footnotes .footnote-backref {
+  text-decoration: none; }
 
 nav {
   font-size: 1.5rem;
@@ -2588,20 +2619,20 @@ nav {
   padding-bottom: 5rem; }
   nav a.prev {
     float: left; }
-  nav a.prev::before {
-    font-family: IMFellFlowers;
-    text-decoration: none;
-    display: inline-block;
-    content: '2';
-    margin-right: .5rem; }
+    nav a.prev::before {
+      font-family: IMFellFlowers;
+      text-decoration: none;
+      display: inline-block;
+      content: '2';
+      margin-right: .5rem; }
   nav a.next {
     float: right; }
-  nav a.next::after {
-    font-family: IMFellFlowers;
-    text-decoration: none;
-    display: inline-block;
-    content: '1';
-    margin-left: .5rem; }
+    nav a.next.next::after {
+      font-family: IMFellFlowers;
+      text-decoration: none;
+      display: inline-block;
+      content: '1';
+      margin-left: .5rem; }
 
 footer {
   clear: both;
@@ -2613,32 +2644,14 @@ footer {
   bottom: 0 0;
   clear: both;
   width: 100%; }
-
-.toe {
-  float: right;
-  padding: 0.1em 0.3em; }
-
-.toe:first-child {
-  margin-right: 1em; }
-
-.toe a {
-  background-color: transparent; }
-
-.toe a:visited {
-  color: black; }
-
-.toe a:link {
-  color: black; }
-
-#license {
-  display: inline; }
-
-#cc-logo {
-  display: inline;
-  padding: 0; }
-
-#cc-meta {
-  display: none; }
+  .feet .toe {
+    float: right;
+    padding: 0.1em 0.3em; }
+    .feet .toe:first-child {
+      margin-right: 1em; }
+    .feet .toe a, .feet .toe a:visited, .feet .toe a:link {
+      color: black;
+      background-color: transparent; }
 
 #impressum address p {
   border: solid #404060 1px;

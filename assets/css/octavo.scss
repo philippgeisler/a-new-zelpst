@@ -31,18 +31,19 @@ h1 {
     font-variant: small-caps;
     line-height: 3rem;
     text-align: center;
-    margin: 2rem .5rem;
+    margin: .75em .1em;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.8rem;
     font-weight: bold;
+    font-variant: small-caps;
     margin-top: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: .75em;
 }
 
 h3 {
-    font-size: 1.3em;
+    font-size: 1.5rem;
     font-weight: normal;
     font-variant: small-caps;
     margin: 1em 0;
@@ -64,14 +65,15 @@ hr {
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: .5em;
-    margin: 2rem .5rem;
+    margin: .5em .1em;
+    padding-left: .25em; // correcting letter-spacing vs. text-align: center
 }
 
 .xs {
     font-size: 1.5rem;
     line-height: 1rem;
     letter-spacing: .2em;
-    margin: .6rem .5rem;
+    margin: .75em .25em;
 }
 
 em, i {
@@ -83,7 +85,7 @@ strong, b {
 }
 
 #post-meta {
-    margin-bottom: 3rem;
+    margin-bottom: 3em;
 
     div {
         font-size: 1.5rem;
@@ -98,16 +100,16 @@ strong, b {
     }
 
     .place {
-        margin: 1.5rem 0;
-    }
-    .place::after {
-        content: ':';
+        margin: 1em 0;
+        &::after {
+            content: ':';
+        }
     }
 
     .author {
         font-size: 1rem;
         letter-spacing: normal;
-        margin-bottom: 1rem;
+        margin-bottom: 1em;
     }
 
     .author-name {
@@ -120,6 +122,12 @@ strong, b {
         font-size: 1rem;
         line-height: 1rem;
    }
+}
+
+p {
+    font-size: 1.25rem;
+    text-align: justify;
+    margin: 2em 0 1em 0;
 }
 
 blockquote {
@@ -139,34 +147,42 @@ blockquote {
         font-size: 1.2em;
         float: right;
     }
+}
 
-    /* cite::before {
-        content: ' — '
-    } */
+pre {
+    background-color: #222;
+    line-height: 1.1em;
+    padding: .75em 1.25em;
+    border-radius: 1rem;
+    margin-bottom: 2em;
+
+    code {
+        color: #ddd;
+        font-family: monospace;
+        font-size: 1rem;
+    }
 }
 
 figure {
+
     img {
         width: 100%;
+        // border: 1px solid;
     }
 
     figcaption {
         position: relative;
-        top: -.4rem;  // ugly fix for problem with (empty) img link text/line height
+        font-style: italic;
         font-variant: small-caps;
-        font-size: .9rem;
+        font-size: 1rem;
         line-height: 1.1em;
         text-align: right;
+        padding: .1em 0;
     }
 }
 
-p {
-    font-size: 1.2em;
-    text-align: justify;
-    margin: 2rem 0;
-}
 
-.textbody p::first-letter {
+.textbody > p::first-letter {
     display: inline-block;
     font-size: 3rem;
     font-weight: bold;
@@ -175,32 +191,62 @@ p {
     color: darkred;
 }
 
-dt {
-    font-size: 1.2em;
+.excerpt {
+    /* Read on… */
+    a, a:link, a:visited {
+        font-size: 1.75rem;
+        font-variant: small-caps;
+        font-weight: bold;
+        width: auto;
+        &::after {
+            content: '…';
+            text-decoration: none;
+            display: inline-block;
+        }
+    }
+
+    p:last-child {
+        text-align: right;
+    }
 }
 
-dt::after {
-    content: ':';
+
+
+dt {
+    font-size: 1.5rem;
+    font-style: italic;
+    &::after {
+        content: ':';
+    }
 }
 
 dd {
-    font-size: 1.2em;
-    margin-left: 1rem;
-}
-
-.footnote-ref {
-    font-size: .7rem;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    text-indent: -.75em;
+    margin-top: .75em;
+    margin-left: 1em;
+    &::before {
+        content: '•';
+        margin-right: .5em;
+    }
+    &:last-child {
+        margin-bottom: 2em;
+    }
 }
 
 .footnotes {
-    font-size: .95rem;
+    ol {
+        font-size: 1.2rem;
+        padding-left: 0;
+    }
 
     p {
         font-size: 1rem;
     }
 
-    ol {
-        padding-left: 0;
+    .footnote-backref {
+            text-decoration: none;
     }
 }
 
@@ -212,24 +258,24 @@ nav {
 
     a.prev {
         float: left;
-    }
-    a.prev::before {
-        font-family: IMFellFlowers;
-        text-decoration: none;
-        display: inline-block;
-        content: '2';
-        margin-right: .5rem;
+        &::before {
+            font-family: IMFellFlowers;
+            text-decoration: none;
+            display: inline-block;
+            content: '2';
+            margin-right: .5rem;
+        }
     }
 
     a.next {
         float: right;
-    }
-    a.next::after {
-        font-family: IMFellFlowers;
-        text-decoration: none;
-        display: inline-block;
-        content: '1';
-        margin-left: .5rem;
+        &.next::after {
+            font-family: IMFellFlowers;
+            text-decoration: none;
+            display: inline-block;
+            content: '1';
+            margin-left: .5rem;
+        }
     }
 }
 
@@ -244,37 +290,20 @@ footer {
 	bottom: 0 0;
 	clear: both;
 	width: 100%;
-}
 
-.toe {
-	float: right;
-	padding: 0.1em 0.3em;
-}
+    .toe {
+        float: right;
+        padding: 0.1em 0.3em;
+        &:first-child {
+            margin-right: 1em;
+        }
 
-.toe:first-child {
-    margin-right: 1em;
+        a, a:visited, a:link {
+            color: black;
+            background-color: transparent;
+        }
+    }
 }
-
-.toe a {
-    background-color: transparent;
-}
-
-.toe a:visited {
-    color: black;
-}
-
-.toe a:link {
-    color: black;
-}
-
-#license {
-	display: inline;
-}
-#cc-logo {
-    display: inline;
-    padding: 0;
-}
-#cc-meta { display: none; }
 
 #impressum address p {
     border: solid rgb( 64,  64,  96) 1px;
