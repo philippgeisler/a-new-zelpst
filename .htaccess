@@ -39,7 +39,7 @@ RewriteRule ^(.*) index.php [L]
 
 # Additional recommended values
 # Remove comments for those you want to use.
-#
-# AddDefaultCharset UTF-8
-#
+
+AddDefaultCharset UTF-8
+
 # php_flag short_open_tag on

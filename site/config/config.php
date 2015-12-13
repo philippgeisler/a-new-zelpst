@@ -15,7 +15,7 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'put your license key here');
+c::set('license', '');
 
 /*
 
@@ -28,3 +28,20 @@ make Kirby work. For more fine-grained configuration
 of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
+
+// c::set('debug','true');
+c::set('content.file.extension', 'md');
+c::set('locale','de_DE.utf8');
+c::set('markdown.extra',true);
+
+/* Routing (Short-URLs) */
+c::set('routes', array(
+	array(
+		'pattern' => '([0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F])',
+		'action'  => function($idx) {
+			$to = page('blog')->children()->findBy('idx', $idx);
+			/* echo $to;*/
+			go($to);
+		}
+	)
+));
