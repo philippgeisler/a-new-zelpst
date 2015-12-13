@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php ecco($page->lang() == '', 'de', $page->lang()) ?>" />
+<!-- header.php -->
 <head>
+	<title><?php ecco($page->title() == 'Zuhause',
+                      html($site->title()), // . $wort,
+                      html($site->title()) . ': ' . html($page->title())) ?>
+    </title>
+	<meta charset="utf-8" />
+	<meta name="description" content="<?php echo html($site->description()) ?>" />
+	<meta name="robots" content="index, follow" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- DEBUG (disable caching) -->
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="-1">
+    <!-- END DEBUG -->
 
-  <?php echo css('assets/css/octavo.css') ?>
+    <?php echo css('assets/css/octavo.css') ?>
 
-  <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
-
+    <link rel="alternate" type="application/rss+xml" href="<?php echo url('blog/feed') ?>" title="Blog Feed" />
 </head>
 <body>
