@@ -5,14 +5,14 @@ title_styled:
 ----
 address:
 Philipp Geisler
-H&#97;&#110;&#115;-H&#101;&#110;&#110;&#121;-J&#97;&#104;&#110;&#110;-W&#101;&#103; 54  
-22085 Hamburg
+H&#97;&#110;&#115;-H&#101;&#110;&#110;&#121;-J&#97;&#104;&#110;&#110;-W&#101;&#103;&nbsp;54
+22085&nbsp;Hamburg
 ----
 text:
 Email: (email: admin@zelpst.de)
 Twitter: (twitter: zelpst)
 
-Inhaltlich Verantwortlicher: Philipp Geisler, H&#97;&#110;&#115;-H&#101;&#110;&#110;&#121;-J&#97;&#104;&#110;&#110;-W&#101;&#103; 54, 22085 Hamburg
+Inhaltlich Verantwortlicher: Philipp Geisler
 
 ## Datenschutzerklärung
 
