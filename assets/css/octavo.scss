@@ -237,12 +237,18 @@ dd {
 
 .footnotes {
     ol {
-        font-size: 1.2rem;
         padding-left: 0;
+        line-height: 1rem;
+    }
+
+    li {
+        margin-bottom: .5em;
     }
 
     p {
-        font-size: 1rem;
+        font-size: .9rem;
+        line-height: 1rem;
+        margin: 0;
     }
 
     .footnote-backref {
@@ -250,11 +256,12 @@ dd {
     }
 }
 
+
 nav {
     font-size: 1.5rem;
     width: 24rem;
-    margin: auto;
-    padding-bottom: 5rem;
+    margin: 4rem auto;
+    padding-bottom: 3rem;
 
     a.prev {
         float: left;
@@ -263,7 +270,8 @@ nav {
             text-decoration: none;
             display: inline-block;
             content: '2';
-            margin-right: .5rem;
+            margin-left: -2em;
+            margin-right: .5em;
         }
     }
 
@@ -274,7 +282,8 @@ nav {
             text-decoration: none;
             display: inline-block;
             content: '1';
-            margin-left: .5rem;
+            margin-left: .5em;
+            margin-right: -2em;
         }
     }
 }

@@ -26,7 +26,8 @@ Year_romanized: MM.XV.
 Author: P. Geisler
 ----
 Text:
-Octavo[^1]
+Octavo[^1] (link: http://www.collisiondetection.net/mt/archives/2014/02/_thats_one_of_t.php text: _Why 18th century books looked like smartphone screens_)
+
 
 ## Specimen
 
@@ -47,9 +48,9 @@ An ordered list follows.
 3. Three
 4. Four
 
-An image of an imprint from 1754.
+An image of a frontispiece[^2]:
 
-(image: 1.jpg caption: This is some caption)
+(image: 1.jpg caption: Candide, ou l'optimisme, traduit de l'allemand de Mr. le docteur Ralph, 1759)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -68,4 +69,5 @@ p {
 
 
 
-[^1]: (link: http://www.collisiondetection.net/mt/archives/2014/02/_thats_one_of_t.php text: _Why 18th century books looked like smartphone screens_)
+[^1]: “Octavo, a Latin word meaning ‘in eighth’ or ‘for the eighth time’, (abbreviated 8vo, 8°, or In-8) is a technical term describing the format of a book…” – (link: https://en.wikipedia.org/wiki/Octavo text: Wikipedia)
+[^2]: (link: http://www.internetculturale.it/jmms/iccuviewer/iccu.jsp?teca=&id=oai%3Abncf.firenze.sbn.it%3A21%3AFI0098%3AMagliabechi%3AUBOE002867 text: Internet Culturale/Biblioteca Nazionale Centrale, Firenze)

@@ -2605,18 +2605,22 @@ dd {
     margin-bottom: 2em; }
 
 .footnotes ol {
-  font-size: 1.2rem;
-  padding-left: 0; }
+  padding-left: 0;
+  line-height: 1rem; }
+.footnotes li {
+  margin-bottom: .5em; }
 .footnotes p {
-  font-size: 1rem; }
+  font-size: .9rem;
+  line-height: 1rem;
+  margin: 0; }
 .footnotes .footnote-backref {
   text-decoration: none; }
 
 nav {
   font-size: 1.5rem;
   width: 24rem;
-  margin: auto;
-  padding-bottom: 5rem; }
+  margin: 4rem auto;
+  padding-bottom: 3rem; }
   nav a.prev {
     float: left; }
     nav a.prev::before {
@@ -2624,7 +2628,8 @@ nav {
       text-decoration: none;
       display: inline-block;
       content: '2';
-      margin-right: .5rem; }
+      margin-left: -2em;
+      margin-right: .5em; }
   nav a.next {
     float: right; }
     nav a.next.next::after {
@@ -2632,7 +2637,8 @@ nav {
       text-decoration: none;
       display: inline-block;
       content: '1';
-      margin-left: .5rem; }
+      margin-left: .5em;
+      margin-right: -2em; }
 
 footer {
   clear: both;
