@@ -31,7 +31,7 @@
             </header>
             <section class="excerpt">
                 <?php echo kirbytext($article->text()->excerpt(130)) ?>
-                <p><a href="<?php echo $article->url() ?>">Read</a></p>
+                <p><a href="<?php echo $article->url() ?>">Read the Treatise</a></p>
             </section>
         </article>
         <div class="flowery">c</div>

@@ -206,16 +206,24 @@ figure {
     }
 }
 
-.textbody > p::first-letter {
+.textbody > p:first-child::first-letter {
     display: inline-block;
     font-size: 3rem;
     font-weight: bold;
     font-style: normal;
     text-decoration: none;
-    color: darkred;
+}
+
+.textbody p:not(p:first-child) {
+    text-indent: 2em;
 }
 
 .excerpt {
+    p:first-child::first-letter {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: bold;
+    }
     /* Read on… */
     a, a:link, a:visited {
         font-size: 1.75rem;
@@ -223,9 +231,12 @@ figure {
         font-weight: bold;
         width: auto;
         &::after {
-            content: '…';
+            font-family: IMFellFlowers;
+            content: '1';
             text-decoration: none;
             display: inline-block;
+            margin-left: .25em;
+            margin-right: -1.75em;
         }
     }
 

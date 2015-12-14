@@ -14,6 +14,8 @@ Subtitle:
     The only joy in the world is to begin. It is good to be alive because living is beginning, always, every moment. When this sensation is lacking—as when one is in prison, or ill, or stupid, or when living has become a habit—one might as well be dead.
 attribution: Cesare Pavese)
 ----
+idx: 0c0d
+----
 City: Hamburg
 ----
 Borrow: Uhlenhorst

@@ -2584,25 +2584,34 @@ figure figcaption {
   text-align: right;
   padding: .1em 0; }
 
-.textbody > p::first-letter {
+.textbody > p:first-child::first-letter {
   display: inline-block;
   font-size: 3rem;
   font-weight: bold;
   font-style: normal;
-  text-decoration: none;
-  color: darkred; }
+  text-decoration: none; }
+
+.textbody p:not(p:first-child) {
+  text-indent: 2em; }
 
 .excerpt {
   /* Read on… */ }
+  .excerpt p:first-child::first-letter {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold; }
   .excerpt a, .excerpt a:link, .excerpt a:visited {
     font-size: 1.75rem;
     font-variant: small-caps;
     font-weight: bold;
     width: auto; }
     .excerpt a::after, .excerpt a:link::after, .excerpt a:visited::after {
-      content: '…';
+      font-family: IMFellFlowers;
+      content: '1';
       text-decoration: none;
-      display: inline-block; }
+      display: inline-block;
+      margin-left: .25em;
+      margin-right: -1.75em; }
   .excerpt p:last-child {
     text-align: right;
     margin-top: 1em;
