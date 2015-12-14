@@ -2663,7 +2663,7 @@ nav {
       content: '1';
       margin-left: .5em;
       margin-right: -2em; }
-  nav a.home {
+  nav .home {
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -2672,7 +2672,7 @@ nav {
     font-variant: small-caps;
     position: relative;
     top: -.5em; }
-    nav a.home::after {
+    nav .home a::after {
       font-family: IMFellFlowers;
       text-decoration: none;
       display: inline-block;

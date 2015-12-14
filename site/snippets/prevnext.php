@@ -5,5 +5,5 @@
     <?php if($page->hasNextVisible()): ?>
         <a class="next" href="<?php echo $page->nextVisible()->url() ?>">subsequently</a>
     <?php endif ?>
-    <a class="home" href="<?php echo $site->homePage()->url() ?>">Index</a>
+    <div class="home"><a href="<?php echo $site->homePage()->url() ?>">Index</a></div>
 </nav>
