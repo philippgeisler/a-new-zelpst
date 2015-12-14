@@ -49,6 +49,10 @@ body {
 #content {
     width: 24rem;
     margin: auto;
+
+    @media all and (max-width: 30rem) {
+        width: 90%;
+    }
 }
 
 h1 {
@@ -237,6 +241,10 @@ figure {
             display: inline-block;
             margin-left: .25em;
             margin-right: -1.75em;
+            @media all and (max-width: 30rem) {
+                margin-right: 0;
+            }
+
         }
     }
 
@@ -323,6 +331,10 @@ nav {
             content: '2';
             margin-left: -2em;
             margin-right: .5em;
+            @media all and (max-width: 30rem) {
+                margin-left: 0;
+            }
+
         }
     }
 
@@ -339,6 +351,10 @@ nav {
             content: '1';
             margin-left: .5em;
             margin-right: -2em;
+            @media all and (max-width: 30rem) {
+                margin-right: 0;
+            }
+
         }
     }
 

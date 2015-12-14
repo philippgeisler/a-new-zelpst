@@ -2467,6 +2467,9 @@ body {
 #content {
   width: 24rem;
   margin: auto; }
+  @media all and (max-width: 30rem) {
+    #content {
+      width: 90%; } }
 
 h1 {
   font-size: 1.8rem;
@@ -2612,6 +2615,9 @@ figure figcaption {
       display: inline-block;
       margin-left: .25em;
       margin-right: -1.75em; }
+      @media all and (max-width: 30rem) {
+        .excerpt a::after, .excerpt a:link::after, .excerpt a:visited::after {
+          margin-right: 0; } }
   .excerpt p:last-child {
     text-align: right;
     margin-top: 1em;
@@ -2674,6 +2680,9 @@ nav {
       content: '2';
       margin-left: -2em;
       margin-right: .5em; }
+      @media all and (max-width: 30rem) {
+        nav .prev a::before {
+          margin-left: 0; } }
   nav .next {
     float: right;
     display: inline-block;
@@ -2687,6 +2696,9 @@ nav {
       content: '1';
       margin-left: .5em;
       margin-right: -2em; }
+      @media all and (max-width: 30rem) {
+        nav .next a::after {
+          margin-right: 0; } }
   nav .home {
     float: left;
     display: inline-block;
