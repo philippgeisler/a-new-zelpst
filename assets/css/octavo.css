@@ -2617,7 +2617,7 @@ figure figcaption {
     margin-top: 1em;
     margin-bottom: 2em; }
 
-a abbr[title], abbr[data-original-title] {
+a abbr[title], a abbr[data-original-title] {
   border-color: darkred; }
 
 dt {
@@ -2653,19 +2653,27 @@ dd {
 nav {
   font-size: 1.5rem;
   width: 24rem;
-  margin: 4rem auto; }
-  nav a.prev {
-    float: left; }
-    nav a.prev::before {
+  margin: 1rem auto; }
+  nav .prev {
+    float: left;
+    display: inline-block;
+    min-width: 8rem;
+    min-height: 3rem;
+    padding-bottom: 3em; }
+    nav .prev a::before {
       font-family: IMFellFlowers;
       text-decoration: none;
       display: inline-block;
       content: '2';
       margin-left: -2em;
       margin-right: .5em; }
-  nav a.next {
-    float: right; }
-    nav a.next::after {
+  nav .next {
+    float: right;
+    display: inline-block;
+    min-width: 8rem;
+    min-height: 3rem;
+    padding-bottom: 3em; }
+    nav .next a::after {
       font-family: IMFellFlowers;
       text-decoration: none;
       display: inline-block;
@@ -2673,14 +2681,21 @@ nav {
       margin-left: .5em;
       margin-right: -2em; }
   nav .home {
+    float: left;
     display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-size: 1.8rem;
+    min-height: 3rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
     font-weight: bold;
+    padding-bottom: 3em;
     font-variant: small-caps;
-    position: relative;
-    top: -.5em; }
+    /* potential fix for vertical alignment problems with small-caps in
+       larger font-size than .prev and .next:
+    &::first-letter {
+        display: inline-block;
+        font-size: 2rem;
+        text-decoration: underline;
+    } */ }
     nav .home a::after {
       font-family: IMFellFlowers;
       text-decoration: none;
@@ -2692,8 +2707,8 @@ nav {
       -ms-transform: rotate(90deg);
       transform: rotate(90deg);
       position: relative;
-      top: -.5em;
-      left: -1.5em; }
+      top: .5em;
+      left: .75em; }
 
 footer {
   clear: both;

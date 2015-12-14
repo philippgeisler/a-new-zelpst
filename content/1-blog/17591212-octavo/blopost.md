@@ -26,6 +26,6 @@ Author: A. Millar
 Text:
 WE confess the Follies of Youth without a Blush ; not so, those of Age. However keep me a little in countenance by considering, that Age wants Amusement more, tho’ it can justify them less, than the preceding periods of life. How you may relish the Pastime here sent you, I know not. It is miscellaneous in its Nature, somewhat licentious in its Conduct; and, perhaps, not over important, and more suitable to my season of life. A serious Thought standing single among many of a lighter nature, will sometimes strike the careless Wanderer after Amusement only, with useful Awe : As monumental Marbles scattered in a wide Pleasure-Garden (and such there are) will call to Recollection those who would never have sought it in a Churchyard-walk of mournful Yews.
 
-To One Such Monument I may conduct you, in which is a hidden Lustre like the sepulchral Lamps of old; but not like them will This be extinguished, but shine the brighter for being produced, after so long Concealment, into open Day.
+To One Such Monument I may conduct you, in which is a hidden Lustre like the sepulchral Lamps of old; but not like them will This be extinguished, but shine the brighter for being produced, after so long Concealment, into open Day. […][^1]
 
-(link: https://books.google.de/books?id=h1IJAAAAQAAJ&printsec=frontcover&redir_esc=y#v=onepage&q&f=false text: …)
+[^1]: (link: https://books.google.de/books?id=h1IJAAAAQAAJ&printsec=frontcover&redir_esc=y#v=onepage&q&f=false text: source)

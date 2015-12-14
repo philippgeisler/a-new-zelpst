@@ -247,8 +247,8 @@ figure {
     }
 }
 
-a abbr[title], abbr[data-original-title] {
-    border-color: darkred;
+a abbr[title], a abbr[data-original-title] {
+    border-color: $link-color;
 }
 
 dt {
@@ -299,11 +299,15 @@ dd {
 nav {
     font-size: 1.5rem;
     width: 24rem;
-    margin: 4rem auto;
+    margin: 1rem auto;
 
-    a.prev {
+    .prev {
         float: left;
-        &::before {
+        display: inline-block;
+        min-width: 8rem;
+        min-height: 3rem;
+        padding-bottom: 3em;
+        a::before {
             font-family: IMFellFlowers;
             text-decoration: none;
             display: inline-block;
@@ -313,9 +317,13 @@ nav {
         }
     }
 
-    a.next {
+    .next {
         float: right;
-        &::after {
+        display: inline-block;
+        min-width: 8rem;
+        min-height: 3rem;
+        padding-bottom: 3em;
+        a::after {
             font-family: IMFellFlowers;
             text-decoration: none;
             display: inline-block;
@@ -326,15 +334,22 @@ nav {
     }
 
     .home {
+        float: left;
         display: inline-block;
-        width: 100%;
-        text-align: center;
-        font-size: 1.8rem;
+        min-height: 3rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
         font-weight: bold;
+        padding-bottom: 3em;
         font-variant: small-caps;
-        position: relative;
-        top: -.5em;
-
+        // font-size: 1.55rem;
+        /* potential fix for vertical alignment problems with small-caps in
+           larger font-size than .prev and .next:
+        &::first-letter {
+            display: inline-block;
+            font-size: 2rem;
+            text-decoration: underline;
+        } */
         a::after {
             font-family: IMFellFlowers;
             text-decoration: none;
@@ -346,12 +361,13 @@ nav {
             -ms-transform: rotate(90deg);
             transform: rotate(90deg);
             position: relative;
-            top: -.5em;
-            left: -1.5em;
+            top: .5em;
+            left: .75em;
         }
 
     }
 }
+
 
 footer {
 	clear: both;

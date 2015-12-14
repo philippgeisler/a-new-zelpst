@@ -1,9 +1,16 @@
+<div class="flowery">c</div>
 <nav>
-    <?php if($page->hasPrevVisible()): ?>
-        <a class="prev" href="<?php echo $page->prevVisible()->url() ?>">previously</a>
-    <?php endif ?>
-    <?php if($page->hasNextVisible()): ?>
-        <a class="next" href="<?php echo $page->nextVisible()->url() ?>">subsequently</a>
-    <?php endif ?>
-    <div class="home"><a href="<?php echo $site->homePage()->url() ?>">Index</a></div>
+        <div class="prev">
+            <?php if($page->hasPrevVisible()): ?>
+                <a href="<?php echo $page->prevVisible()->url() ?>">previously</a>
+        <?php endif ?>
+        </div>
+        <div class="home">
+            <a href="<?php echo $site->homePage()->url() ?>">Index</a>
+        </div>
+        <div class="next">
+            <?php if($page->hasNextVisible()): ?>
+                <a href="<?php echo $page->nextVisible()->url() ?>">subsequently</a>
+            <?php endif ?>
+        </div>
 </nav>

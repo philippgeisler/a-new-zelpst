@@ -2,4 +2,5 @@
 /site/accounts
 /assets/avatars
 /assets/css/.sass-cache
+*.css.map
 /thumbs/*
