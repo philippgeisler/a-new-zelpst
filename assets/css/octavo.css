@@ -221,7 +221,7 @@ html {
 @viewport {
   width: device-width; }
 html {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-tap-highlight-color: transparent; }
 
 body {
@@ -2432,6 +2432,10 @@ output {
 .fa-percent:before {
   content: ""; }
 
+@media only screen and (max-width: 30rem) {
+  html {
+    font-size: .9rem; } }
+
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-variant-ligatures: common-ligatures;
@@ -2466,10 +2470,11 @@ body {
 
 #content {
   width: 24rem;
-  margin: auto; }
-  @media all and (max-width: 30rem) {
+  margin: 0 auto; }
+  @media only screen and (max-width: 30rem) {
     #content {
-      width: 90%; } }
+      width: 85%;
+      margin: 0 7.5%; } }
 
 h1 {
   font-size: 1.8rem;
@@ -2615,7 +2620,7 @@ figure figcaption {
       display: inline-block;
       margin-left: .25em;
       margin-right: -1.75em; }
-      @media all and (max-width: 30rem) {
+      @media only screen and (max-width: 30rem) {
         .excerpt a::after, .excerpt a:link::after, .excerpt a:visited::after {
           margin-right: 0; } }
   .excerpt p:last-child {
@@ -2680,9 +2685,9 @@ nav {
       content: '2';
       margin-left: -2em;
       margin-right: .5em; }
-      @media all and (max-width: 30rem) {
+      @media only screen and (max-width: 30rem) {
         nav .prev a::before {
-          margin-left: 0; } }
+          font-size: 1rem; } }
   nav .next {
     float: right;
     display: inline-block;
@@ -2696,9 +2701,9 @@ nav {
       content: '1';
       margin-left: .5em;
       margin-right: -2em; }
-      @media all and (max-width: 30rem) {
+      @media only screen and (max-width: 30rem) {
         nav .next a::after {
-          margin-right: 0; } }
+          font-size: 1rem; } }
   nav .home {
     float: left;
     display: inline-block;
@@ -2706,6 +2711,7 @@ nav {
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: bold;
+    padding-left: .5em;
     padding-bottom: 3em;
     font-variant: small-caps;
     /* potential fix for vertical alignment problems with small-caps in
@@ -2728,6 +2734,9 @@ nav {
       position: relative;
       top: .5em;
       left: .75em; }
+      @media only screen and (max-width: 30rem) {
+        nav .home a::after {
+          font-size: 1rem; } }
 
 footer {
   clear: both;
