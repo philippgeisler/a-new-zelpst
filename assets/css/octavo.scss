@@ -21,6 +21,31 @@ body {
     font-variant-numeric: oldstyle-nums stacked-fractions; /* apparently not supported (by Safari) */
 }
 
+#site-header h1 {
+    font-size: 4rem;
+    letter-spacing: .1em;
+    margin-bottom: .5em;
+
+    .epsilon {
+        display: inline-block;
+        font-size: 1.2em;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+
+}
+
+.flowery {
+    font-family: IMFellFlowers;
+    font-size: 4rem;
+    line-height: 1em;
+    width: 100%;
+    text-align: center;
+}
+
 #content {
     width: 24rem;
     margin: auto;
@@ -181,7 +206,6 @@ figure {
     }
 }
 
-
 .textbody > p::first-letter {
     display: inline-block;
     font-size: 3rem;
@@ -207,10 +231,14 @@ figure {
 
     p:last-child {
         text-align: right;
+        margin-top: 1em;
+        margin-bottom: 2em;
     }
 }
 
-
+a abbr[title], abbr[data-original-title] {
+    border-color: darkred;
+}
 
 dt {
     font-size: 1.5rem;
@@ -261,7 +289,6 @@ nav {
     font-size: 1.5rem;
     width: 24rem;
     margin: 4rem auto;
-    padding-bottom: 3rem;
 
     a.prev {
         float: left;
@@ -277,7 +304,7 @@ nav {
 
     a.next {
         float: right;
-        &.next::after {
+        &::after {
             font-family: IMFellFlowers;
             text-decoration: none;
             display: inline-block;
@@ -285,6 +312,32 @@ nav {
             margin-left: .5em;
             margin-right: -2em;
         }
+    }
+
+    a.home {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-variant: small-caps;
+        position: relative;
+        top: -.5em;
+        &::after {
+            font-family: IMFellFlowers;
+            text-decoration: none;
+            display: inline-block;
+            content: '2';
+            -moz-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            position: relative;
+            top: -.5em;
+            left: -1.5em;
+        }
+
     }
 }
 

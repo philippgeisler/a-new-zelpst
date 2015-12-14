@@ -28,3 +28,4 @@ WE confess the Follies of Youth without a Blush ; not so, those of Age. However 
 
 To One Such Monument I may conduct you, in which is a hidden Lustre like the sepulchral Lamps of old; but not like them will This be extinguished, but shine the brighter for being produced, after so long Concealment, into open Day.
 
+(link: https://books.google.de/books?id=h1IJAAAAQAAJ&printsec=frontcover&redir_esc=y#v=onepage&q&f=false text: …)

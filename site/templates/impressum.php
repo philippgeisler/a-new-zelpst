@@ -7,4 +7,7 @@
 		<?php echo kirbytext($page->text()) ?>
 	</article>
 </section>
+<nav>
+	<a class="home" href="<?php echo $site->homePage()->url() ?>">Index</a>
+</nav>
 <?php snippet('footer') ?>

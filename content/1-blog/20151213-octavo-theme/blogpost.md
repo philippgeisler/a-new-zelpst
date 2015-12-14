@@ -6,7 +6,7 @@ Title_styled:
 # sheets                  {.em}
 # of                      {.xs}
 # style                   {.em}
-# for the                 {.xs}
+# to the                 {.xs}
 # Kirby Content Mgmt. Sys.
 ----
 Subtitle:
@@ -26,8 +26,7 @@ Year_romanized: MM.XV.
 Author: P. Geisler
 ----
 Text:
-Octavo[^1] (link: http://www.collisiondetection.net/mt/archives/2014/02/_thats_one_of_t.php text: _Why 18th century books looked like smartphone screens_)
-
+OCTAVO[^1] is a theme for the (link: http://getkirby.com text: Kirby CMS), originally inspired by a blog post by Clive Thompson, (link: http://www.collisiondetection.net/mt/archives/2014/02/_thats_one_of_t.php text: _Why 18th century books looked like smartphone screens_)[^2].
 
 ## Specimen
 
@@ -48,7 +47,7 @@ An ordered list follows.
 3. Three
 4. Four
 
-An image of a frontispiece[^2]:
+An image of a frontispiece[^3]:
 
 (image: 1.jpg caption: Candide, ou l'optimisme, traduit de l'allemand de Mr. le docteur Ralph, 1759)
 
@@ -66,8 +65,8 @@ p {
 }
 ```
 
-
-
-
 [^1]: “Octavo, a Latin word meaning ‘in eighth’ or ‘for the eighth time’, (abbreviated 8vo, 8°, or In-8) is a technical term describing the format of a book…” – (link: https://en.wikipedia.org/wiki/Octavo text: Wikipedia)
-[^2]: (link: http://www.internetculturale.it/jmms/iccuviewer/iccu.jsp?teca=&id=oai%3Abncf.firenze.sbn.it%3A21%3AFI0098%3AMagliabechi%3AUBOE002867 text: Internet Culturale/Biblioteca Nazionale Centrale, Firenze)
+[^2]: via this (link: https://twitter.com/StabiHH/status/675210320273661952 text: tweet)
+[^3]: source: (link: http://www.internetculturale.it/jmms/iccuviewer/iccu.jsp?teca=&id=oai%3Abncf.firenze.sbn.it%3A21%3AFI0098%3AMagliabechi%3AUBOE002867 text: Internet Culturale/Biblioteca Nazionale Centrale, Firenze)
+
+*[CMS]: Content Management System

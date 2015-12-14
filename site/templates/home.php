@@ -1,6 +1,10 @@
 <?php snippet('header') ?>
 <!-- home.php -->
 <section id="content">
+    <header id="site-header">
+        <h1>Z<span class="epsilon">3</span>LPST</h1>
+        <div class="flowery">c</div>
+    </header>
     <article class="banner">
        <p><strong><?php echo kirbytext($site->description()) ?></strong></p>
     </article>
@@ -26,24 +30,26 @@
                 </aside>
             </header>
             <section class="excerpt">
-                <?php echo kirbytext($article->text()->excerpt(180)) ?>
-                <p><a href="<?php echo $article->url() ?>">Read on</a></p>
+                <?php echo kirbytext($article->text()->excerpt(130)) ?>
+                <p><a href="<?php echo $article->url() ?>">Read</a></p>
             </section>
         </article>
-        <hr>
+        <div class="flowery">c</div>
     <?php endforeach ?>
 </section>
 
-<nav class="pagination">
-    <div class="art-nav prev">
-      <?php if($pagination->hasNextPage()): ?>
-          <a class="prev" href="<?php echo $pagination->nextPageUrl() ?>">previously</a>
-      <?php endif ?>
-    </div>
-    <div class="art-nav next">
-      <?php if($pagination->hasPrevPage()): ?>
-          <a class="next" href="<?php echo $pagination->prevPageUrl() ?>">subsequently</a>&nbsp;-&#62;
-      <?php endif ?>
-    </div>
-</nav>
+<?php if($pagination->hasNextPage() || $pagination->hasPrevPage()): ?>
+    <nav class="pagination">
+        <?php if($pagination->hasNextPage()): ?>
+            <div class="art-nav prev">
+                  <a class="prev" href="<?php echo $pagination->nextPageUrl() ?>">previously</a>
+            </div>
+        <?php endif ?>
+        <?php if($pagination->hasPrevPage()): ?>
+            <div class="art-nav next">
+                  <a class="next" href="<?php echo $pagination->prevPageUrl() ?>">subsequently</a>&nbsp;-&#62;
+            </div>
+        <?php endif ?>
+    </nav>
+<?php endif ?>
 <?php snippet('footer') ?>
