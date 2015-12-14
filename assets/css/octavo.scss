@@ -251,6 +251,15 @@ a abbr[title], a abbr[data-original-title] {
     border-color: $link-color;
 }
 
+ul {
+    list-style-type: none;
+    padding-left: 1em;
+        li::before {
+        content: '•';
+        margin-right: .5em;
+    }
+}
+
 dt {
     font-size: 1.5rem;
     font-style: italic;

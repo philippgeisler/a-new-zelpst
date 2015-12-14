@@ -2620,6 +2620,13 @@ figure figcaption {
 a abbr[title], a abbr[data-original-title] {
   border-color: darkred; }
 
+ul {
+  list-style-type: none;
+  padding-left: 1em; }
+  ul li::before {
+    content: '•';
+    margin-right: .5em; }
+
 dt {
   font-size: 1.5rem;
   font-style: italic; }
