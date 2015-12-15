@@ -3,7 +3,7 @@
         <div class="prev">
             <?php if($page->hasPrevVisible()): ?>
                 <a href="<?php echo $page->prevVisible()->url() ?>">previously</a>
-        <?php endif ?>
+            <?php endif ?>
         </div>
         <div class="home">
             <a href="<?php echo $site->homePage()->url() ?>">Index</a>

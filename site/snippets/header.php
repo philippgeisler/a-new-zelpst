@@ -18,6 +18,11 @@
 
     <?php echo css('assets/css/octavo.css') ?>
 
+	<link rel="icon" href="/assets/images/favicon-16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="/assets/images/favicon-48.png" sizes="48x48" type="image/png">
+	<link rel="icon" href="/assets/images/favicon-62.png" sizes="62x62" type="image/png">  
+
     <link rel="alternate" type="application/rss+xml" href="<?php echo url('blog/feed') ?>" title="Blog Feed" />
 </head>
 <body>

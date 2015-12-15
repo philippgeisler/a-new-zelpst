@@ -2704,6 +2704,16 @@ nav {
       @media only screen and (max-width: 30rem) {
         nav .next a::after {
           font-size: 1rem; } }
+  nav .home-err {
+    width: 100%;
+    text-align: center;
+    min-height: 3rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: .5em;
+    padding-bottom: 3em;
+    font-variant: small-caps; }
   nav .home {
     float: left;
     display: inline-block;
@@ -2713,30 +2723,23 @@ nav {
     font-weight: bold;
     padding-left: .5em;
     padding-bottom: 3em;
-    font-variant: small-caps;
-    /* potential fix for vertical alignment problems with small-caps in
-       larger font-size than .prev and .next:
-    &::first-letter {
-        display: inline-block;
-        font-size: 2rem;
-        text-decoration: underline;
-    } */ }
-    nav .home a::after {
-      font-family: IMFellFlowers;
-      text-decoration: none;
-      display: inline-block;
-      content: '2';
-      -moz-transform: rotate(90deg);
-      -webkit-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
-      position: relative;
-      top: .5em;
-      left: .75em; }
-      @media only screen and (max-width: 30rem) {
-        nav .home a::after {
-          font-size: 1rem; } }
+    font-variant: small-caps; }
+  nav .home a::after, nav .home-err a::after {
+    font-family: IMFellFlowers;
+    text-decoration: none;
+    display: inline-block;
+    content: '2';
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: relative;
+    top: .5em;
+    left: .75em; }
+    @media only screen and (max-width: 30rem) {
+      nav .home a::after, nav .home-err a::after {
+        font-size: 1rem; } }
 
 footer {
   clear: both;

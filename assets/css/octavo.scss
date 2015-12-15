@@ -366,6 +366,18 @@ nav {
         }
     }
 
+    .home-err {
+        width: 100%;
+        text-align: center;
+        min-height: 3rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: .5em;
+        padding-bottom: 3em;
+        font-variant: small-caps;
+    }
+
     .home {
         float: left;
         display: inline-block;
@@ -376,14 +388,9 @@ nav {
         padding-left: .5em;
         padding-bottom: 3em;
         font-variant: small-caps;
-        // font-size: 1.55rem;
-        /* potential fix for vertical alignment problems with small-caps in
-           larger font-size than .prev and .next:
-        &::first-letter {
-            display: inline-block;
-            font-size: 2rem;
-            text-decoration: underline;
-        } */
+    }
+
+    .home, .home-err {
         a::after {
             font-family: IMFellFlowers;
             text-decoration: none;
