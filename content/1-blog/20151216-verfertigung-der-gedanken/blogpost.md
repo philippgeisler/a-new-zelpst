@@ -34,7 +34,7 @@ As the work is in the public domain, I decided to reproduce it here in full.
 
 ***
 
-(image: page4-Ueber_die_allmähliche_Verfertigung_der_Gedanken_beim_Reden.crop.jpg link: https://commons.wikimedia.org/w/index.php?title=File:Ueber_die_allmähliche_Verfertigung_der_Gedanken_beim_Reden.pdf&page=4)
+(image: 1.jpg link: https://commons.wikimedia.org/w/index.php?title=File:Ueber_die_allmähliche_Verfertigung_der_Gedanken_beim_Reden.pdf&page=4)
 
 ***
 
