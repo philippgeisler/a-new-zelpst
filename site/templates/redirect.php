@@ -1,2 +1,2 @@
-<!-- simple redirect to latest blog entry -->
-<?php go($pages->find('blog')->children()->visible()->last()->url()) ?>
+<!-- redirect to given page -->
+<?php go($pages->find($page->redirect_to())->url()) ?>
