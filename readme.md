@@ -18,17 +18,17 @@ in Alpha. Use at your own risk.
 To generate the title style without resorting to images, the default template
 of OCTAVO relies on Markdown Extra and currently uses these separate fields:
 
-- ´title_styled´: title in Markdown format; make each line ´h1´, i.e. begin each with a ´#´, and set each lines style by adding one of the specific CSS classes (see below) in Markdown Extra, e.g. ´{.em}´
--  ´subtitle´: to achieve the look of my posts, make it a blockquote using the [Blockquote tag](https://github.com/bartvandebiezen/kirby-v2-blockquote-tag)
--  ´city´, ´borrow´, ´author´: for the book “imprint” in the format “\[city\]: Printed for \[author\], in \[borrow\]”
--  ´year_romanized´: well, I know… (see below)
+- `title_styled`: title in Markdown format; make each line `h1`, i.e. begin each with a `#`, and set each lines style by adding one of the specific CSS classes (see below) in Markdown Extra, e.g. `{.em}`
+-  `subtitle`: to achieve the look of my posts, make it a blockquote using the [Blockquote tag](https://github.com/bartvandebiezen/kirby-v2-blockquote-tag)
+-  `city`, `borrow`, `author`: for the book “imprint” in the format “\[city\]: Printed for \[author\], in \[borrow\]”
+-  `year_romanized`: well, I know… (see below)
 -  replace the “License” below with a Creative Commons one
 
 ### CSS Classes for styling title lines
 
-- ´em´: HUGE widely spaced letters (SHEETS and STYLE in the screenshot above) 
-- ´xs´: small widely spaced letters (e.g. “by way of” in screenshot)
-- ´spaced´: as regular header text size with added space between characters
+- `em`: HUGE widely spaced letters (SHEETS and STYLE in the screenshot above)
+- `xs`: small widely spaced letters (e.g. “by way of” in screenshot)
+- `spaced`: as regular header text size with added space between characters
 
 ## To Dos aka “Yes, I know…”
 
@@ -36,9 +36,9 @@ This was a pretty quick hack in a way, so there are a lot of things I would like
 to improve or fix even without you having to tell me. Do still tell me though if
 you have ideas or think these ones here are bad:
 
-- create ´year_romanized´ programmatically from publishing ´date´ field
-- maybe not call it ´subtitle´ and always make it a blockquote?
-- put all theme-specific fields in one ´octavo´ YAML field (purpose: make clear this is theme-specific data, both in content markup and template code, possibly allowing to identify which theme CSS to use when having multi-theme blog (see next idea)
+- create `year_romanized` programmatically from publishing `date` field
+- maybe not call it `subtitle` and always make it a blockquote?
+- put all theme-specific fields in one `octavo` YAML field (purpose: make clear this is theme-specific data, both in content markup and template code, possibly allowing to identify which theme CSS to use when having multi-theme blog (see next idea)
 - idea: as it will be hard to impossible to only come up with articles that match this very specific, historic design, I think of ways to give myself a way to easily tell Kirby to use a specific theme for specific blog posts; first step will be to name all theme-specific files accordingly unique, then create a “theme-agnostic” homepage
 - fix layout issues on devices with very small width
 
