@@ -19,13 +19,16 @@ To generate the title style without resorting to images, the default template
 of OCTAVO relies on Markdown Extra and currently uses these separate fields:
 
 - ´title_styled´: title in Markdown format; make each line ´h1´, i.e. begin each with a ´#´, and set each lines style by adding one of the specific CSS classes (see below) in Markdown Extra, e.g. ´{.em}´
--  ´subtitle´: to achieve the look of my posts, make it a blockquote
+-  ´subtitle´: to achieve the look of my posts, make it a blockquote using the [Blockquote tag](https://github.com/bartvandebiezen/kirby-v2-blockquote-tag)
 -  ´city´, ´borrow´, ´author´: for the book “imprint” in the format “\[city\]: Printed for \[author\], in \[borrow\]”
 -  ´year_romanized´: well, I know… (see below)
+-  replace the “License” below with a Creative Commons one
 
 ### CSS Classes for styling title lines
 
-![screenshot](octavo_classes.png)
+- ´em´: HUGE widely spaced letters (SHEETS and STYLE in the screenshot above) 
+- ´xs´: small widely spaced letters (e.g. “by way of” in screenshot)
+- ´spaced´: as regular header text size with added space between characters
 
 ## To Dos aka “Yes, I know…”
 
